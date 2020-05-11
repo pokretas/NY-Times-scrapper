@@ -38,7 +38,8 @@ for book in pages:
         description = Description.getText()
         descriptions.append(description)
 
-        
+
+#creating Dataframe
 df = pd.DataFrame(data=books)
 #leaving only the biggest value of "Weeks on the list"
 df.sort_values(['Weeks','Author'], ascending = True)
